@@ -7,7 +7,7 @@ resource "aws_lb" "test" {
   internal           = false
   load_balancer_type = "application"
 
-  enable_deletion_protection = false
+  enable_deletion_protection = true
 
   tags = {
     Environment = "production"
