@@ -10,4 +10,5 @@ resource "aws_lb" "test" {
   tags = {
     Environment = "production"
   }
+  enable_deletion_protection = true
 }
