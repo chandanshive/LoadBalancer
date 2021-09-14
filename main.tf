@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_lb" "test" {
   name               = "LoadBalancer"
   internal           = false
-  load_balancer_type = "application"
+  load_balancer_type = "application1"
 
   tags = {
     Environment = "production1"
