@@ -8,6 +8,6 @@ resource "aws_lb" "test" {
   load_balancer_type = "application"
 
   tags = {
-    Environment = "production"
+    Environment = "production1"
   }
 }
