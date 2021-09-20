@@ -10,4 +10,11 @@ resource "aws_lb" "test" {
   tags = {
     Environment = "production"
   }
+
+  access_logs {
+    bucket  = "<s3_bucket_name>"
+    enabled = true
+  }
+  enable_deletion_protection       = true
+  enable_cross_zone_load_balancing = true
 }
